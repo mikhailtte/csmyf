@@ -20,7 +20,7 @@ namespace TgBotApp.Models.Commands
 
 
 
-            await client.SendTextMessageAsync(0, "", replyToMessageId: 0);
+            await client.SendTextMessageAsync(0, "privetic", replyToMessageId: 0);
         }
     }
 }
