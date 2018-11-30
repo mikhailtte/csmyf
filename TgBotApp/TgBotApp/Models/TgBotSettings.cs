@@ -7,7 +7,7 @@ namespace TgBotApp.Models
 {
     public class TgBotSettings
     {
-        public static string Url { get; set; } = "https://da5dc909-0ee0-4-231-b9ee.azurewebsites.net/ ";
+        public static string Url { get; set; } = "https://tgbotapp.azurewebsites.net";
 
         public static string Name { get; set; } = "lolboltbot";
 
