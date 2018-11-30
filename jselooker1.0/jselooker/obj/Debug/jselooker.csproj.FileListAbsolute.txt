@@ -1,0 +1,10 @@
+C:\Users\Mikhail\source\repos\jselooker\jselooker\bin\Debug\jselooker.exe.config
+C:\Users\Mikhail\source\repos\jselooker\jselooker\bin\Debug\jselooker.exe
+C:\Users\Mikhail\source\repos\jselooker\jselooker\bin\Debug\jselooker.pdb
+C:\Users\Mikhail\source\repos\jselooker\jselooker\bin\Debug\WebDriver.dll
+C:\Users\Mikhail\source\repos\jselooker\jselooker\bin\Debug\WebDriver.xml
+C:\Users\Mikhail\source\repos\jselooker\jselooker\obj\Debug\jselooker.csprojAssemblyReference.cache
+C:\Users\Mikhail\source\repos\jselooker\jselooker\obj\Debug\jselooker.csproj.CoreCompileInputs.cache
+C:\Users\Mikhail\source\repos\jselooker\jselooker\obj\Debug\jselooker.csproj.CopyComplete
+C:\Users\Mikhail\source\repos\jselooker\jselooker\obj\Debug\jselooker.exe
+C:\Users\Mikhail\source\repos\jselooker\jselooker\obj\Debug\jselooker.pdb
