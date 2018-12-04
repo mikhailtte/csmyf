@@ -10,7 +10,6 @@ namespace TgBotApp.Controllers
     public class MessageController : ApiController
     {
         [Route(@"api/message/update")] //webhook uri part
-
         public async Task<OkResult> Update([FromBody]Update update)
         {
             var commands = Bot.Commands;
