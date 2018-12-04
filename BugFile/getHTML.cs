@@ -134,7 +134,7 @@ namespace getHTML {
             public float step = 1/2; 
 		
 			while(true) {
-			
+//=====================ПОЛУЧЕНИЕ ДАННЫХ ОТ САЙТА================================			
             //endless monitoring cycle 
 				HttpWebRequest req = (HttpWebRequest)HttpWebRequest.Create(link);
 				req.Method = "GET";
@@ -151,7 +151,7 @@ namespace getHTML {
 					Console.WriteLine(ex.Message);
 				}
 			
-				//парсим цену продажи
+//======================ПАРСИНГ ЗНАЧЕНИЙ ПОКУПКИ-ПРОДАЖИ=========================
 			
 				string sell = String.Copy(htmlres);
 			
@@ -174,6 +174,7 @@ namespace getHTML {
 				double sell_new = Double.TryParse(sell);
 				double buy_new = Double.TryParse(buy);
 			
+//=====================ЛОГИКА ВЫЧИСЛЕНИЯ БИПА========================
 				if (!sell0) {
 					sell0 = sell_new;
 				}
@@ -225,6 +226,8 @@ namespace getHTML {
 				Thread.Sleep(timewait);
 			}
 			Log.CLog("round");
+//==================ЗЕ ЕНД=======================//
+//===============================================//
 		}
 	}
 	
