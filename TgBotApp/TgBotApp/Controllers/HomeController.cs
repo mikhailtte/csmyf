@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Web;
+using System.Runtime.CompilerServices;
 using System.Web.Mvc;
 using TgBotApp.Models;
 
@@ -14,5 +15,11 @@ namespace TgBotApp.Controllers
         {
             return "TG BOT LOLBOLTBOT0.2";
         }
+
+        public string About()
+        {
+            return "LOL THIS IS ABOUT";
+        }
+    
     }
 }
