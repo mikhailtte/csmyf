@@ -1,25 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Web;
-using System.Runtime.CompilerServices;
 using System.Web.Mvc;
-using TgBotApp.Models;
 
-namespace TgBotApp.Controllers
+namespace testmvc.Controllers
 {
     public class HomeController : Controller
     {
-		public string Index()
+        public string Index()
         {
-            return "TG BOT LOLBOLTBOT0.2";
+            return "<h1 align = \"center\">INDEX</h1>";
         }
 
         public string About()
         {
-            return "LOL THIS IS ABOUT";
+            ViewBag.Message = "Your application description page.";
+
+            return "<h1 align = \"center\">ABOUT</h1>";
         }
-    
+
+        public string Contact()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return "<h1 align = \"center\">CONTACT LOL</h1>";
+        }
     }
 }

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется следующим образом
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных с этой сборкой.
-[assembly: AssemblyTitle("TgBotApp")]
+[assembly: AssemblyTitle("TgBotApp1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TgBotApp")]
+[assembly: AssemblyProduct("TgBotApp1")]
 [assembly: AssemblyCopyright("© , 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для ID библиотеки типов typelib, если этот проект видим для COM
-[assembly: Guid("dcd7b66b-38a6-4587-945e-4839b5c54cfa")]
+[assembly: Guid("1c0d71c9-deae-4d38-a60b-2ae188d13917")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //

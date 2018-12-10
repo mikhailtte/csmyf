@@ -4,12 +4,14 @@ using System.IO;
 
 namespace Beeper.Models
 {
-    public class ParseABCC
+    public static class ParseABCC
     {
-        string GetHTML(string url, string PoolId)
+        static string GetHTML(string url, string PoolId)
         {
             //configuring request to need url
-            HttpWebRequest req = (HttpWebRequest)HttpWebRequest.Create(url);
+            
+            //Log.m(url);
+            HttpWebRequest req = (HttpWebRequest)HttpWebRequest.Create(url+PoolId);
             req.Method = "GET";
 
             //try to get a response to our request in htmlres
@@ -32,7 +34,7 @@ namespace Beeper.Models
             return htmlres;
         }
 
-        void ParseSellBuy(string htmlres, double refSell, double refBuy)
+        static void ParseSellBuy(string htmlres, ref double refSell, ref double refBuy)
         {
             //create copy htmlres couse will cut him
             string sell = String.Copy(htmlres);
@@ -53,16 +55,17 @@ namespace Beeper.Models
             indexEnd = htmlres.IndexOf("\"");
             htmlres = htmlres.Substring(0, indexEnd);
 
-
-
+            sell = sell.Replace(".", ",");
+            htmlres = htmlres.Replace(".", ",");
             refSell = Convert.ToDouble(sell);
             refBuy = Convert.ToDouble(htmlres); //(htmlres = buy)
         }
 
-        void GetSellBuy(string url, string PoolId, ref double refSell, ref double refBuy)
+        public static void GetSellBuy(string PoolId, ref double refSell, ref double refBuy)
         {
+            string url = "https://abcc.com/markets/";
             string htmlres = GetHTML(url, PoolId);
-            ParseSellBuy(htmlres, refSell, refBuy);
+            ParseSellBuy(htmlres, ref refSell, ref refBuy);
         }
     }
 }

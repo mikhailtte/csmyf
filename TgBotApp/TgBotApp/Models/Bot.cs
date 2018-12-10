@@ -28,7 +28,6 @@ namespace TgBotApp.Models
             var hook = string.Format(TgBotSettings.Url, "api/message/update");
             await client.SetWebhookAsync(hook);
 
-
             return client;
         }
     }
